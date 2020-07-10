@@ -11,14 +11,14 @@ class EventSourcer():
         self.index += 1
         self.stored.insert(self.index, self.value+num)
         self.value = self.stored[self.index]
-        print(val.value)
+        print(self.value)
         pass
 
     def subtract(self, num: int):
         self.index += 1
         self.stored.insert(self.index, self.value - num)
         self.value = self.stored[self.index]
-        print(val.value)
+        print(self.value)
         pass
 
     def undo(self):
